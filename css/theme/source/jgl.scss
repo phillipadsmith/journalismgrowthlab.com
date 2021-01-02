@@ -1,0 +1,100 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(./fonts/source-sans-pro/source-sans-pro.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+
+
+$backgroundColor: #3793af;
+
+// Generates the presentation background, can be overridden
+// to return a background image or gradient
+@mixin bodyBackground() {
+        background: url('/static/JGL-slide-bg-w-logo.png') no-repeat top right;
+        background-size: cover;
+}
+
+$mainColor: #eee;
+$headingColor: #eee;
+
+$mainFontSize: 32px;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: normal;
+$headingFontWeight: 600;
+$linkColor: #eee;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+.reveal a {
+        text-decoration: underline !important;
+}
+
+.small { 
+        font-size: 70%;
+}
+.container{
+        display: flex;
+    }
+.col{
+        flex: 1;
+        font-size: 90%;
+        flex-shrink: 3;
+}
+.formkit-form {
+        max-width: 100% !important;
+}
+.formkit-alert-error li {
+        color: black;
+}
+
+.reveal ul {
+        list-style: none !important;
+        list-style-type: none !important;
+
+   }
+
+.reveal ul li {
+        background-image: url("/static/bullet.png");
+        background-repeat: no-repeat;
+        background-position-y: 12px;
+        padding-left: 40px;
+        margin-bottom: 20px;
+}
+
+.reveal img, .reveal video, .reveal iframe {
+        max-width: 75% !important;
+        max-height: 75% !important;
+}
+
+.reveal .playback {
+        left: 65px !important;
+}
+
+// Change text colors against dark slide backgrounds
+@include dark-bg-text-color(#fff);
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------

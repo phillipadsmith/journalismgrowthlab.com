@@ -10,3 +10,12 @@ tmp/**
 node_modules/
 .sass-cache
 dist/*.map
+/CONTRIBUTING.md
+/demo.html
+/examples
+/gulpfile.js
+/LICENSE
+/package-lock.json
+/package.json
+/README.md
+/test
