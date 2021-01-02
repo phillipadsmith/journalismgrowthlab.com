@@ -1,0 +1,17 @@
+body {
+    background: url('/static/JGL-slide-bg-w-logo.png') no-repeat top right;
+    background-size: cover;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+#container {
+    color: white;
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    margin: 0 auto;
+    padding-top: 100px;
+    width: 50%;
+}
