@@ -14,4 +14,16 @@ a {
     margin: 0 auto;
     padding-top: 100px;
     width: 50%;
+
+}
+
+footer {
+    bottom: 0;
+    color: white;
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    left: 0;
+    padding: 20px 0 20px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
 }
