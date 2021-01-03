@@ -1,0 +1,66 @@
+{
+  "_from": "reveal-ga",
+  "_id": "reveal-ga@0.2.0",
+  "_inBundle": false,
+  "_integrity": "sha512-Mr60sqkd5cC+/oAQjcOn6g0/grK+IFIyCz7OBPTbeAN33+qqBOmYzQvLFVBLdsp1YMd1q+qN8cJXMBwo10NMlw==",
+  "_location": "/reveal-ga",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "reveal-ga",
+    "name": "reveal-ga",
+    "escapedName": "reveal-ga",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/reveal-ga/-/reveal-ga-0.2.0.tgz",
+  "_shasum": "cb67d4ea22dea792fe37c8d1384757c71e6c3a12",
+  "_spec": "reveal-ga",
+  "_where": "/Users/phillipadsmith/Development/journalismgrowthlab.com",
+  "author": {
+    "name": "Steve Grunwell",
+    "email": "steve@stevegrunwell.com",
+    "url": "https://stevegrunwell.com"
+  },
+  "bugs": {
+    "url": "https://github.com/stevegrunwell/reveal-ga/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "lodash": "^3.10.1"
+  },
+  "deprecated": false,
+  "description": "Add Google Universal Analytics tracking to your reveal.js presentation",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^1.3.2",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "homepage": "https://github.com/stevegrunwell/reveal-ga#readme",
+  "keywords": [
+    "Google",
+    "analytics",
+    "reveal.js",
+    "presentation"
+  ],
+  "license": "MIT",
+  "main": "./src/reveal-ga.js",
+  "name": "reveal-ga",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevegrunwell/reveal-ga.git"
+  },
+  "scripts": {
+    "build": "grunt",
+    "start": "grunt watch"
+  },
+  "version": "0.2.0"
+}

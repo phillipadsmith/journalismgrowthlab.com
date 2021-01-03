@@ -3,11 +3,14 @@
 
 <head>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-N9QJWSC');</script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N9QJWSC');</script>
     <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -46,8 +49,8 @@
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9QJWSC"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9QJWSC" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <div class="reveal">
@@ -66,7 +69,8 @@
                 <ul>
                     <li>Our team is small by design. We’re passionate about the work we do. We only work with publishers
                         (and only a few at a time).</li>
-                    <li>We do everything the old school way&mdash;by hand. Nothing is cookie cutter and we think of our job
+                    <li>We do everything the old school way&mdash;by hand. Nothing is cookie cutter and we think of our
+                        job
                         as figuring out which paid tactics and platforms work best for each client.</li>
                     <li>Most uniquely, we are multi-platform and full-funnel agency: we design campaigns that utilize
                         several advertising platforms to drive results at the top,
@@ -103,8 +107,9 @@
                         <img src="/static/phillip-smith.png" height="150" align="left" style="margin-right: 20px;" />
                         <p style="text-align: left;"><a href="https://www.linkedin.com/in/phillipadsmith/">Phillip</a>
                             is a veteran publishing consultant and entrepeneurial coach. His passion is
-                            helping newsrooms to make more money, helping news startups grow their audience, and <a href="https://journalismentrepreneurship.com/">helping
-                            journalists succeed as entrepreneurs</a>.
+                            helping newsrooms to make more money, helping news startups grow their audience, and <a
+                                href="https://journalismentrepreneurship.com/">helping
+                                journalists succeed as entrepreneurs</a>.
                             <br />
                         </p>
                     </div>
@@ -136,16 +141,21 @@
     <script src="/plugin/highlight/highlight.js"></script>
     <script src="/plugin/reveal.js-menu/menu.js"></script>
     <script>
+        var gaPropertyID = 'UA-186430344-1';
         // More info about initialization & config:
         // - https://revealjs.com/initialization/
         // - https://revealjs.com/config/
         Reveal.initialize({
+
             hash: true,
             // autoSlide: 10000,
             // loop: false,
             // Learn about plugins: https://revealjs.com/plugins/
             plugins: [RevealMarkdown, RevealHighlight, RevealMenu],
-
+            dependencies: [
+                // other dependencies/plugins
+                { src: '/plugin/reveal-ga/dist/reveal-ga.min.js' }
+            ],
             menu: {
                 custom: [
                     {
