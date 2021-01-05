@@ -52,7 +52,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  * GLOBAL STYLES
  *********************************************/
 :root {
-  --background-color: #3793af;
+  --background-color: #409eb8;
   --main-font: Source Sans Pro, Helvetica, sans-serif;
   --main-font-size: 32px;
   --main-color: #eee;
@@ -79,7 +79,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 .reveal-viewport {
   background: url("/static/JGL-slide-bg-w-logo.png") no-repeat top right;
   background-size: cover;
-  background-color: #3793af; }
+  background-color: #409eb8; }
 
 .reveal {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -333,4 +333,4 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  *********************************************/
 @media print {
   .backgrounds {
-    background-color: #3793af; } }
+    background-color: #409eb8; } }
