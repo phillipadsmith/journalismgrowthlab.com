@@ -68,7 +68,9 @@
         a:focus-visible, button:focus-visible { outline: 2px solid var(--teal-300); outline-offset: 3px }
         ::selection { background: var(--teal-200); color: var(--ink-900) }
         img { max-width: 100%; display: block }
-        img.feature { width: 100%; height: auto; margin-top: 40px }
+        figure.feature { margin: 40px 0 0 }
+        figure.feature img { width: 100%; height: auto }
+        figure.feature figcaption { margin-top: 12px; font-size: 16px; color: var(--text-muted) }
 
         .wrap { max-width: var(--container-max); margin: 0 auto; padding: 0 var(--gutter) }
         section { padding: var(--section-pad) 0 }
@@ -202,9 +204,13 @@
                 <div>
                     <p class="eyebrow">What I do</p>
                     <h2>Most of my week is spent inside newsrooms, working on the numbers that keep them going.</h2>
-                    <img class="feature" src="/static/jgl-reader-relationships.jpg" width="1280" height="720"
-                        loading="lazy"
-                        alt="Phillip Smith at his desk reading a Nieman Lab story on The Atlantic's Google subscribers, under the title 'Create reader relationships today, while the traffic is still free'">
+                    <figure class="feature">
+                        <a href="https://www.linkedin.com/in/phillipadsmith/"><img src="/static/jgl-reader-relationships.jpg"
+                                width="1280" height="720" loading="lazy"
+                                alt="Phillip Smith at his desk reading a Nieman Lab story on The Atlantic's Google subscribers, under the title 'Create reader relationships today, while the traffic is still free'"></a>
+                        <figcaption><a href="https://www.linkedin.com/in/phillipadsmith/">Follow on LinkedIn</a> for
+                            weekly resources and tips, 100% human intelligence.</figcaption>
+                    </figure>
 
                 </div>
                 <div>
