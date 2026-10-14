@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <!-- Google Tag Manager -->
@@ -13,38 +13,152 @@
         })(window, document, 'script', 'dataLayer', 'GTM-N9QJWSC');</script>
     <!-- End Google Tag Manager -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-    <!-- Primary Meta Tags -->
-    <title>Journalism Growth Lab | Reach your potential 🚀</title>
-    <meta name="title" content="Journalism Growth Lab | Reach your potential 🚀">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Journalism Growth Lab | Audience and revenue coaching for newsrooms</title>
     <meta name="description"
-        content="A boutique customer acquisition agency for publishers who want to grow their audience or revenue online">
+        content="Phillip Smith coaches independent newsrooms on growing their audience and the reader revenue that sustains it.">
+    <link rel="canonical" href="https://journalismgrowthlab.com/">
+    <link rel="icon" href="/favicon.ico">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://journalismgrowthlab.com">
-    <meta property="og:title" content="Journalism Growth Lab | Reach your potential 🚀">
+    <meta property="og:url" content="https://journalismgrowthlab.com/">
+    <meta property="og:title" content="Journalism Growth Lab | Audience and revenue coaching for newsrooms">
     <meta property="og:description"
-        content="A boutique customer acquisition agency for publishers who want to grow their audience or revenue online">
+        content="Phillip Smith coaches independent newsrooms on growing their audience and the reader revenue that sustains it.">
     <meta property="og:image" content="https://journalismgrowthlab.com/static/jgl-social-share.png">
     <meta name="facebook-domain-verification" content="pgyrtexe2586ecddm5ks37iyfjx8yj" />
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://journalismgrowthlab.com/">
-    <meta property="twitter:title"
-        content="Journalism Growth Lab | Reach your potential 🚀">
+    <meta property="twitter:title" content="Journalism Growth Lab | Audience and revenue coaching for newsrooms">
     <meta property="twitter:description"
-        content="A boutique customer acquisition agency for publishers who want to grow their audience or revenue online.">
+        content="Phillip Smith coaches independent newsrooms on growing their audience and the reader revenue that sustains it.">
     <meta property="twitter:image" content="https://journalismgrowthlab.com/static/jgl-social-share.png">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/dist/reset.css">
-    <link rel="stylesheet" href="/dist/reveal.css">
-    <link rel="stylesheet" href="/dist/theme/jgl.css" id="theme">
+    <style>
+        /* Tokens from the JGL design system (Claude Design) */
+        @font-face { font-family: 'Source Sans Pro'; src: url('/dist/theme/fonts/source-sans-pro/source-sans-pro-regular.woff') format('woff'); font-weight: 400; font-style: normal; font-display: swap }
+        @font-face { font-family: 'Source Sans Pro'; src: url('/dist/theme/fonts/source-sans-pro/source-sans-pro-italic.woff') format('woff'); font-weight: 400; font-style: italic; font-display: swap }
+        @font-face { font-family: 'Source Sans Pro'; src: url('/dist/theme/fonts/source-sans-pro/source-sans-pro-semibold.woff') format('woff'); font-weight: 600; font-style: normal; font-display: swap }
 
-    <!-- Theme used for syntax highlighted code -->
-    <link rel="stylesheet" href="/plugin/highlight/monokai.css" id="highlight-theme">
+        :root {
+            --teal-50: #eef7fa; --teal-200: #a9d5e2; --teal-300: #7cbfd1; --teal-500: #409eb8; --teal-700: #2a7084;
+            --ink-900: #141118; --ink-800: #1c1822; --ink-700: #2a2530;
+            --white: #ffffff; --grey-50: #f6f6f7; --grey-200: #e2e2e4; --grey-600: #6e6a73;
+            --text-strong: var(--ink-900); --text-body: var(--ink-700); --text-muted: var(--grey-600);
+            --text-on-dark-muted: #b9b4bf; --border-subtle: var(--grey-200); --border-on-dark: rgba(255, 255, 255, .14);
+            --font-sans: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+            --font-display: 'Montserrat', 'Source Sans Pro', Helvetica, sans-serif;
+            --container-max: 1120px; --container-narrow: 760px; --gutter: clamp(16px, 5vw, 48px);
+            --section-pad: clamp(72px, 10vw, 128px); --header-h: 72px;
+        }
+
+        *, *::before, *::after { box-sizing: border-box }
+        html { -webkit-font-smoothing: antialiased; scroll-behavior: smooth; scroll-padding-top: var(--header-h) }
+        body { margin: 0; font-family: var(--font-sans); font-size: 18px; line-height: 1.5; color: var(--text-body); background: var(--white) }
+        h1, h2, h3 { font-weight: 600; line-height: 1.2; color: var(--text-strong); margin: 0; text-wrap: balance }
+        p { margin: 0; text-wrap: pretty }
+        a { color: var(--teal-700); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; transition: color 150ms ease }
+        a:hover { color: var(--ink-900) }
+        a:focus-visible, button:focus-visible { outline: 2px solid var(--teal-300); outline-offset: 3px }
+        ::selection { background: var(--teal-200); color: var(--ink-900) }
+        img { max-width: 100%; display: block }
+
+        .wrap { max-width: var(--container-max); margin: 0 auto; padding: 0 var(--gutter) }
+        section { padding: var(--section-pad) 0 }
+        .dark { background: var(--ink-900); color: var(--text-on-dark-muted) }
+        .dark h1, .dark h2, .dark h3 { color: var(--white) }
+        .dark a { color: var(--teal-300) }
+        .dark a:hover { color: var(--white) }
+        .alt { background: var(--grey-50) }
+        .brand { background: var(--teal-500); color: var(--white) }
+        .brand h2, .brand h3 { color: var(--white) }
+
+        .eyebrow { display: flex; align-items: center; gap: 14px; font-family: var(--font-display); font-weight: 600; font-size: 12px; letter-spacing: .32em; text-transform: uppercase; color: var(--teal-700); margin-bottom: 20px }
+        .eyebrow::before { content: ''; width: 28px; height: 2px; background: currentColor; flex: none }
+        .dark .eyebrow { color: var(--teal-300) }
+        .brand .eyebrow { color: var(--white) }
+        h2 { font-size: clamp(30px, 4vw, 40px) }
+        .lead { font-size: clamp(20px, 2.2vw, 24px); line-height: 1.45; margin-top: 24px }
+        .prose p + p { margin-top: 20px }
+        .split { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: clamp(40px, 6vw, 96px); align-items: start }
+
+        /* Buttons */
+        .btn { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 600; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; text-decoration: none; padding: 16px 26px; border: 2px solid transparent; transition: background 150ms ease, color 150ms ease, border-color 150ms ease }
+        .btn .arr { transition: transform 150ms ease }
+        .btn:hover .arr { transform: translateX(3px) }
+        .btn-primary { background: var(--teal-500); color: var(--white) }
+        .btn-primary:hover { background: var(--teal-700); color: var(--white) }
+        .btn-ondark { background: var(--white); color: var(--ink-900) }
+        .btn-ondark:hover { background: var(--teal-500); color: var(--white) }
+        .btn-ghost { color: var(--white); border-color: rgba(255, 255, 255, .4) }
+        .btn-ghost:hover { border-color: var(--white); color: var(--white) }
+        .dark .btn-ondark { color: var(--ink-900) }
+        .dark .btn-ondark:hover, .dark .btn-ghost, .dark .btn-ghost:hover { color: var(--white) }
+        .actions { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 40px }
+
+        /* Header */
+        .site-header { position: sticky; top: 0; z-index: 10; height: var(--header-h); background: rgba(20, 17, 24, .92); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--border-on-dark) }
+        .site-header .wrap { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px }
+        .site-header img { height: 36px; width: auto }
+        .site-header nav { display: flex; align-items: center; gap: 28px }
+        .site-header nav a.navlink { font-family: var(--font-display); font-weight: 500; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--white); text-decoration: none }
+        .site-header nav a.navlink:hover { color: var(--teal-300) }
+        .site-header .btn { padding: 10px 16px; font-size: 12px }
+        @media (max-width: 720px) { .site-header nav a.navlink { display: none } .site-header img { height: 30px } }
+
+        /* Hero */
+        .hero { background: var(--ink-900); padding: clamp(88px, 14vw, 168px) 0 clamp(80px, 12vw, 144px); border-bottom: 6px solid var(--teal-500) }
+        .hero h1 { font-size: clamp(40px, 7vw, 72px); line-height: 1.08; letter-spacing: -0.015em; max-width: 15ch }
+        .hero .lead { max-width: 38em; color: var(--text-on-dark-muted) }
+
+        /* Lists with the J-stroke bullet */
+        .jlist { list-style: none; margin: 0; padding: 0 }
+        .jlist li { position: relative; padding-left: 40px; margin-bottom: 20px; font-size: 20px; line-height: 1.5 }
+        .jlist li::before { content: ''; position: absolute; left: 0; top: .3em; width: 22px; height: 22px; background: url('/static/bullet.png') center / contain no-repeat }
+
+        /* Program grid */
+        .grid-rule { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); border-top: 2px solid var(--ink-900); margin-top: 48px }
+        .grid-rule > div { padding: 28px 32px 8px 0 }
+        .grid-rule h3 { font-size: 21px; margin-bottom: 8px }
+        .grid-rule p { color: var(--text-muted); font-size: 17px }
+        .footnote { margin-top: 40px; max-width: var(--container-narrow) }
+
+        /* Clients band */
+        .clients { list-style: none; margin: 32px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); border-top: 1px solid rgba(255, 255, 255, .35) }
+        .clients li { padding: 18px 0; border-bottom: 1px solid rgba(255, 255, 255, .35); font-size: 21px; font-weight: 600 }
+        .figs > div { display: grid; grid-template-columns: minmax(120px, 170px) 1fr; gap: 24px; align-items: baseline; padding: 24px 0; border-top: 1px solid rgba(255, 255, 255, .35) }
+        .figs .n { font-family: var(--font-display); font-weight: 600; font-size: clamp(36px, 5vw, 52px); line-height: 1; letter-spacing: -0.02em }
+        .figs .l { font-size: 19px; line-height: 1.4 }
+        .figs .src { display: block; font-size: 15px; opacity: .8; margin-top: 4px }
+        @media (max-width: 480px) { .figs > div { grid-template-columns: 1fr; gap: 8px } }
+
+        /* Offer card */
+        .offer { border: 1px solid var(--border-subtle); padding: clamp(28px, 4vw, 40px); background: var(--white) }
+        .offer .price { font-family: var(--font-display); font-weight: 600; font-size: clamp(32px, 4vw, 44px); color: var(--ink-900); letter-spacing: -0.02em; line-height: 1.1 }
+        .offer .per { font-family: var(--font-display); font-weight: 600; font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: var(--text-muted); margin-top: 10px }
+        .offer ul { margin: 28px 0 0; padding: 0; list-style: none; border-top: 1px solid var(--border-subtle) }
+        .offer li { padding: 14px 0; border-bottom: 1px solid var(--border-subtle); font-size: 17px }
+
+        /* About */
+        .about { display: grid; grid-template-columns: minmax(0, 320px) 1fr; gap: clamp(32px, 6vw, 80px); align-items: start }
+        .about img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; filter: grayscale(1) }
+        @media (max-width: 720px) { .about { grid-template-columns: 1fr } .about img { max-width: 240px } }
+
+        /* Contact + footer */
+        .contact { background: var(--ink-800); border-top: 1px solid var(--border-on-dark); text-align: center }
+        .contact .eyebrow { justify-content: center }
+        .contact .lead { max-width: 34em; margin-left: auto; margin-right: auto }
+        .contact .actions { justify-content: center }
+        footer { background: var(--ink-900); color: var(--text-on-dark-muted); font-size: 15px; padding: 28px 0 }
+        footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px }
+        footer a { color: var(--text-on-dark-muted) }
+    </style>
 </head>
 
 <body>
@@ -53,171 +167,197 @@
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <div class="reveal">
-        <div class="slides">
-            <section id="boutique-agency" data-background-image="/static/JGL-slide-bg.png"
-                data-background-position="top right" data-background-repeat="no-repeat">
-                <img alt="Journalism Growth Lab" width="400" src="/static/JGL-logo-small.png" />
-                <h1 style="display:none;">Journalism Growth Lab</h1>
-                <h5>A boutique customer acquisition agency for publishers who want to grow their audience or revenue
-                    online
-                </h5>
-            </section>
-            <section id="grow-your-audience" data-menu-title="Grow Your Audience">
-                <h1 class="smaller">Grow Your Audience. Build Your Business.</h1>
-                <ul>
-                    <li>We help publishers find the larger, often untapped, audience they deserve.</li>
-                    <li>We also work to keep readers coming back, and then guide those readers
-                        toward becoming paying customers.</li>
-                    <li>We do this using paid advertising on digital platforms (our unique approach is based on <a
-                            href="https://www.lenfestinstitute.org/news-technology-innovation/smart-investments-in-paid-lead-acquisition-to-grow-membership-or-spending-money-to-make-money/">experimentation</a> and 
-                        <a
-                            href="https://www.lenfestinstitute.org/news-technology-innovation/spending-money-to-make-money-part-ii-case-studies-of-newsrooms-using-paid-acquisition/">
-                            research</a>)&mdash;long story short, we figure out what works on these platforms so
-                        that you don't have to.</li>
-                </ul>
-            </section>
+    <header class="site-header">
+        <div class="wrap">
+            <a href="/" aria-label="Journalism Growth Lab home"><img src="/static/jgl-logo-white.png"
+                    alt="Journalism Growth Lab" width="917" height="326"></a>
+            <nav aria-label="Main">
+                <a class="navlink" href="#what-i-do">What I do</a>
+                <a class="navlink" href="#work-with-me">Work with me</a>
+                <a class="navlink" href="#about">About</a>
+                <a class="btn btn-primary" href="#contact">Book a call</a>
+            </nav>
+        </div>
+    </header>
 
-            <section id="our-unique-approach">
-                <h1>Our Unique Approach</h1>
-                <ul>
-                    <li>Our team is small by design. We’re passionate about the work we do. We work only with publishers
-                        (and only a few at a time).</li>
-                    <li>We do everything the old school way&mdash;by hand. Nothing is cookie cutter and we think of our
-                        job
-                        as figuring out which paid tactics and platforms work best for each client.</li>
-                    <li>Most uniquely, we are a multi-platform and full-funnel agency&mdash;we design campaigns that
-                        utilize
-                        several advertising platforms to drive results at the top,
-                        middle, and bottom of the customer acquisition funnel.</li>
-                </ul>
-            </section>
+    <main>
+        <section class="hero dark" id="top">
+            <div class="wrap">
+                <p class="eyebrow">Audience and revenue coaching for newsrooms</p>
+                <h1>Grow your audience. Build your business.</h1>
+                <p class="lead">I'm Phillip Smith, and I coach the people running independent newsrooms on the
+                    practical side of growth: finding the readers who should know about you, keeping them
+                    coming back, and asking the right ones to pay.</p>
+                <div class="actions">
+                    <a class="btn btn-ondark" href="#contact">Book a call <span class="arr" aria-hidden="true">&rarr;</span></a>
+                    <a class="btn btn-ghost" href="#work-with-me">How coaching works</a>
+                </div>
+            </div>
+        </section>
 
-            <section id="results">
-                <h1>Results</h1>
-                <ul>
-                    <li>More than a dozen digital publishers&mdash;both upstarts and established brands&mdash;trust us
-                        to manage their digital advertising budget and grow their business.</li>
-                    <li>Publishers come to us when they need a creative partner on their team&mdash;an extra pair of
-                        hands
-                        that can dig in, solve technical issues, pitch ideas, develop effective ads, and deliver ROI
-                        across platforms.</li>
-                    <li>In 2020, we helped publishers invest more than $100,000 in lead acquisition and
-                        customer conversion campaigns. Clients keep working with us because we drive results.</li>
-                </ul>
-            </section>
-            <section id="case-study-audience" data-menu-title="Case Study - Audience">
-                <h1>Case Study</h1>
-                <h2>Newsletter Growth for a Small Publisher</h2>
-                <ul>
-                    <li>
-                        <strong>Step 1:</strong> Made simple improvements to the publisher's website that resulted in a
-                        775% increase in email newsletter subscriptions.
-                    </li>
-                    <li>
-                        <strong>Step 2:</strong> Ran paid digital advertising to drive new traffic to the publication; within
-                        seven months the number of people subscribing to the newsletter had increased by another 400%.
-                    </li>
-                    <li>
-                        <strong>Outcome:</strong> Over 18 months, we grew the publisher’s newsletter audience by more than 4000% with a
-                        cost per subscriber below the industry average.
-                    </li>
-                </ul>
-            </section>
-            <section id="case-study-customers" data-menu-title="Case Study - Customers">
-                <h1>Case Study</h1>
-                <h2>Customer Growth for a Mid-Sized Publisher</h2>
-                <ul>
-                    <li>
-                        <strong>Step 1:</strong> Ran lead generation and website traffic campaigns that resulted in
-                        10,000 new email newsletter subscribers.
-                    </li>
-                    <li>
-                        <strong>Step 2:</strong> Implemented strategic targeting and re-targeting campaigns to drive
-                        paid subscriptions.
-                    </li>
-                    <li>
-                        <strong>Outcome:</strong> In four months we converted 2500 casual readers into paying
-                        subscribers at a cost low enough to deliver short-term ROI. Additional revenue was generated
-                        through a voluntary donation option during the check-out process.
-                    </li>
-                </ul>
-            </section>
+        <section id="what-i-do">
+            <div class="wrap split">
+                <div>
+                    <p class="eyebrow">What I do</p>
+                    <h2>Most of my week is spent inside newsrooms, working on the numbers that keep them going.</h2>
+                </div>
+                <div>
+                    <p class="lead" style="margin-top:0">Coaching with me is hands-on and specific to your
+                        newsroom. We pick the growth problem that matters most right now, design a small
+                        experiment around it, and look at what happened together. The work usually touches
+                        some mix of these:</p>
+                    <ul class="jlist" style="margin-top:32px">
+                        <li>Reaching the people in your community who don't know you exist yet, through paid
+                            campaigns, partnerships and search.</li>
+                        <li>Turning casual visitors into newsletter subscribers, and making sure the welcome
+                            series earns their attention.</li>
+                        <li>Asking for money well, whether that's membership, donations or a year-end campaign.</li>
+                        <li>Getting your analytics set up so you can tell which experiments actually worked.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-            <section id="clients">
-                <h1>Clients</h1>
-                <img src="/static/JGL-clients.png" />
-            </section>
-
-            <section id="ad-platforms">
-                <h1>Ad Platform Expertise</h1>
-                <img src="/static/JGL-platforms.png" />
-            </section>
-
-            <section id="team">
-                <h1>Team</h1>
-                <div class="container">
-                    <div class="col" style="margin-right: 20px;">
-                        <img src="/static/phillip-smith.png" height="150" align="left" style="margin-right: 20px;" />
-                        <p style="text-align: left;"><a href="https://www.linkedin.com/in/phillipadsmith/">Phillip</a>
-                            is a veteran publishing consultant and entrepeneurial coach. His passion is
-                            helping newsrooms to make more money, helping news startups grow their audience, and <a
-                                href="https://journalismentrepreneurship.com/">helping
-                                journalists succeed as entrepreneurs</a>.
-                            <br />
-                        </p>
+        <section class="alt" id="programs">
+            <div class="wrap">
+                <p class="eyebrow">Programs</p>
+                <h2>I also coach inside the programs that newsrooms already know and trust.</h2>
+                <div class="grid-rule">
+                    <div>
+                        <h3>American Journalism Project</h3>
+                        <p>Coach, Audience &amp; Sustainability Lab</p>
                     </div>
-                    <div class="col" style="margin-left: 20px;">
-                        <img src="/static/emily.png" height="150" align="left" style="margin-right: 20px;" />
-                        <p style="text-align: left;">
-                            Emily is an experienced campaign manager. She works with publishers looking for creative
-                            ways to reach new audiences and build organic connections through engaging content and
-                            conversations.
-                        </p>
+                    <div>
+                        <h3>Institute for Nonprofit News</h3>
+                        <p>Coach, Field Lab</p>
+                    </div>
+                    <div>
+                        <h3>The Lenfest Institute</h3>
+                        <p>Expert, Lenfest Expert Networks</p>
+                    </div>
+                    <div>
+                        <h3>BlueLena</h3>
+                        <p>Advisory coaching</p>
                     </div>
                 </div>
-            </section>
+                <p class="footnote">Before this, I directed the Google News Initiative Pre-launch Lab from 2020 to
+                    2025, which graduated more than 100 news founders, and in 2024 I designed and delivered the
+                    pilot of the GNI Journalistic Creators Lab for news creators working in video.</p>
+            </div>
+        </section>
 
-            <section id="contact-us">
-                <h1>Contact Us</h1>
-                <p class="small">Please feel free to drop Phillip a note on <a
+        <section class="brand" id="clients">
+            <div class="wrap split">
+                <div>
+                    <p class="eyebrow">Clients</p>
+                    <h2>Newsrooms I've worked with</h2>
+                    <ul class="clients">
+                        <li>Anchorage Daily News</li>
+                        <li>Barn Raiser</li>
+                        <li>Block Club Chicago</li>
+                        <li>The Colorado Sun</li>
+                        <li>EdNC</li>
+                        <li>Grist</li>
+                        <li>The 19th</li>
+                        <li>YES! Magazine</li>
+                    </ul>
+                </div>
+                <div class="figs">
+                    <div>
+                        <span class="n">500+</span>
+                        <span class="l">hours of one-on-one coaching with news founders and senior newsroom
+                            leaders<span class="src">GNI Pre-launch Lab, 2020 to 2025</span></span>
+                    </div>
+                    <div>
+                        <span class="n">100+</span>
+                        <span class="l">founders graduated from a program I directed<span class="src">GNI
+                                Pre-launch Lab, 2020 to 2025</span></span>
+                    </div>
+                    <div>
+                        <span class="n">$4M+</span>
+                        <span class="l">in funding I've personally secured for clients<span class="src">Career
+                                total</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work-with-me">
+            <div class="wrap split">
+                <div class="prose">
+                    <p class="eyebrow">Work with me</p>
+                    <h2>A coaching retainer, built around your newsroom's next growth problem.</h2>
+                    <p class="lead">We meet on a regular rhythm, monthly or every other week, with you and
+                        whoever owns audience and revenue on your team. Between sessions there's a short list of
+                        things to try, and a shared document that tracks what we tested and what happened.</p>
+                    <p>If you've been through one of the programs above, a retainer is a good way to keep the
+                        momentum going once the program wraps up. And if I'm not the right person for your problem,
+                        I'll tell you, and I'll usually know who is.</p>
+                </div>
+                <div class="offer">
+                    <div class="price">From $8,000</div>
+                    <div class="per">Per year</div>
+                    <ul>
+                        <li>Monthly or biweekly sessions with your team</li>
+                        <li>Experiments designed around your goals and your data</li>
+                        <li>A running record of what we tried and what it taught us</li>
+                    </ul>
+                    <div class="actions" style="margin-top:32px">
+                        <a class="btn btn-primary" href="#contact">Book a call <span class="arr" aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dark" id="about">
+            <div class="wrap about">
+                <img src="/static/phillip-smith.png" alt="Phillip Smith" width="400" height="400" loading="lazy">
+                <div class="prose">
+                    <p class="eyebrow">About</p>
+                    <h2>I've spent more than two decades on the business side of independent journalism.</h2>
+                    <p class="lead">I was the CTO of The Tyee, where I worked with the executive team on
+                        fundraising that raised more than $1M for its investigative reporting. I was later Mozilla's
+                        Senior Fellow for Media &amp; Trust, and a John S. Knight Journalism Fellow at Stanford,
+                        where I piloted the entrepreneurship training that became the GNI Pre-launch Lab.</p>
+                    <p>These days I spend most of my time coaching newsroom leaders, and I live and work in Napa,
+                        California.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact dark" id="contact">
+            <div class="wrap">
+                <p class="eyebrow">Contact</p>
+                <h2>Let's talk through a challenge.</h2>
+                <p class="lead">Book a time on my calendar, or drop me a note on <a
                         href="https://www.linkedin.com/in/phillipadsmith/">LinkedIn</a>.</p>
-                <p class="small">Or <a href="https://calendly.com/phillipadsmith/journalism-efforts-pro-bono">book a time to talk through a challenge</a>.</p>
-            </section>
+                <div class="actions">
+                    <a class="btn btn-ondark" href="https://calendly.com/phillipadsmith/journalism-efforts-pro-bono">Book a call <span class="arr" aria-hidden="true">&rarr;</span></a>
+                    <a class="btn btn-ghost" href="https://www.linkedin.com/in/phillipadsmith/">Message on LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <span>&copy; 2026 Journalism Growth Lab</span>
+            <a href="/privacy.html">Privacy &amp; terms</a>
         </div>
-    </div>
+    </footer>
 
-
-    <script src="/dist/reveal.js"></script>
-    <script src="/plugin/markdown/markdown.js"></script>
-    <script src="/plugin/highlight/highlight.js"></script>
-    <script src="/plugin/reveal.js-menu/menu.js"></script>
     <script>
-        var gaPropertyID = 'UA-186430344-1';
-        // More info about initialization & config:
-        // - https://revealjs.com/initialization/
-        // - https://revealjs.com/config/
-        Reveal.initialize({
-
-            hash: true,
-            // autoSlide: 10000,
-            // loop: false,
-            // Learn about plugins: https://revealjs.com/plugins/
-            plugins: [RevealMarkdown, RevealHighlight, RevealMenu],
-            dependencies: [
-                // other dependencies/plugins
-                { src: '/plugin/reveal-ga/dist/reveal-ga.min.js' }
-            ],
-            menu: {
-                custom: [
-                    {
-                        title: 'More',
-                        icon: '<i class="fa fa-info">',
-                        src: 'links.html'
-                    }
-                ]
+        // The old slide-deck site used hash routes like /#/contact-us; send those to the matching section.
+        (function () {
+            var map = { 'contact-us': 'contact', 'team': 'about', 'results': 'clients', 'clients': 'clients', 'grow-your-audience': 'what-i-do', 'our-unique-approach': 'what-i-do' };
+            var h = location.hash.replace(/^#\/?/, '');
+            if (location.hash.indexOf('#/') === 0) {
+                var id = map[h] || 'top';
+                history.replaceState(null, '', '#' + id);
+                var el = document.getElementById(id);
+                if (el) el.scrollIntoView();
             }
-        });
+        })();
     </script>
 </body>
 
