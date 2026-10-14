@@ -14,26 +14,26 @@
     <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Journalism Growth Lab | Audience growth coaching for news publishers</title>
+    <title>Journalism Growth Lab | Audience and revenue coaching for newsrooms</title>
     <meta name="description"
-        content="Phillip Smith coaches news publishers on audience growth: which audiences are worth pursuing, and what it costs to reach them.">
+        content="Phillip Smith coaches independent newsrooms on growing their audience and the reader revenue that sustains it.">
     <link rel="canonical" href="https://journalismgrowthlab.com/">
     <link rel="icon" href="/favicon.ico">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://journalismgrowthlab.com/">
-    <meta property="og:title" content="Journalism Growth Lab | Audience growth coaching for news publishers">
+    <meta property="og:title" content="Journalism Growth Lab | Audience and revenue coaching for newsrooms">
     <meta property="og:description"
-        content="Phillip Smith coaches news publishers on audience growth: which audiences are worth pursuing, and what it costs to reach them.">
+        content="Phillip Smith coaches independent newsrooms on growing their audience and the reader revenue that sustains it.">
     <meta property="og:image" content="https://journalismgrowthlab.com/static/jgl-social-share.png">
     <meta name="facebook-domain-verification" content="pgyrtexe2586ecddm5ks37iyfjx8yj" />
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://journalismgrowthlab.com/">
-    <meta property="twitter:title" content="Journalism Growth Lab | Audience growth coaching for news publishers">
+    <meta property="twitter:title" content="Journalism Growth Lab | Audience and revenue coaching for newsrooms">
     <meta property="twitter:description"
-        content="Phillip Smith coaches news publishers on audience growth: which audiences are worth pursuing, and what it costs to reach them.">
+        content="Phillip Smith coaches independent newsrooms on growing their audience and the reader revenue that sustains it.">
     <meta property="twitter:image" content="https://journalismgrowthlab.com/static/jgl-social-share.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -85,8 +85,7 @@
         .brand .eyebrow { color: var(--white) }
         h2 { font-size: clamp(30px, 4vw, 40px) }
         .lead { font-size: clamp(20px, 2.2vw, 24px); line-height: 1.45; margin-top: 24px }
-        .prose p + p, .prose .jlist + p { margin-top: 20px }
-        .prose p:not(.lead):not(.eyebrow) { font-size: 20px; line-height: 1.55 }
+        .prose p + p { margin-top: 20px }
         .split { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: clamp(40px, 6vw, 96px); align-items: start }
 
         /* Buttons */
@@ -131,12 +130,13 @@
         .footnote { margin-top: 40px; max-width: var(--container-narrow) }
 
         /* Clients band */
-        .clients { list-style: none; margin: 32px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); border-top: 1px solid rgba(255, 255, 255, .35) }
-        .clients li { padding: 18px 0; border-bottom: 1px solid rgba(255, 255, 255, .35); font-size: 21px; font-weight: 600 }
-        .figs > div { display: grid; grid-template-columns: minmax(120px, 170px) 1fr; gap: 24px; align-items: baseline; padding: 24px 0; border-top: 1px solid rgba(255, 255, 255, .35) }
+        .clients-note { margin-top: 16px; font-size: 19px; max-width: 46em }
+        .clients { list-style: none; margin: 32px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr)); column-gap: 32px; border-top: 1px solid rgba(255, 255, 255, .35) }
+        .clients li { padding: 12px 0; border-bottom: 1px solid rgba(255, 255, 255, .35); font-size: 18px; font-weight: 600 }
+        .figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); column-gap: 32px; margin-top: 56px }
+        .figs > div { display: grid; grid-template-columns: 1fr; gap: 10px; align-content: start; padding: 24px 0; border-top: 1px solid rgba(255, 255, 255, .35) }
         .figs .n { font-family: var(--font-display); font-weight: 600; font-size: clamp(36px, 5vw, 52px); line-height: 1; letter-spacing: -0.02em }
         .figs .l { font-size: 19px; line-height: 1.4 }
-        .figs .src { display: block; font-size: 15px; opacity: .8; margin-top: 4px }
         @media (max-width: 480px) { .figs > div { grid-template-columns: 1fr; gap: 8px } }
 
         /* Offer card */
@@ -184,14 +184,14 @@
     <main>
         <section class="hero dark" id="top">
             <div class="wrap">
-                <p class="eyebrow">Audience growth coaching for news publishers</p>
+                <p class="eyebrow">Audience and revenue coaching for newsrooms</p>
                 <h1>Grow your audience. Build your business.</h1>
                 <p class="lead">I'm Phillip Smith, and I coach the people running independent newsrooms on the
                     practical side of growth: finding the readers who should know about you, keeping them
                     coming back, and asking the right ones to pay.</p>
                 <div class="actions">
                     <a class="btn btn-ondark" href="#contact">Book a call <span class="arr" aria-hidden="true">&rarr;</span></a>
-                    <a class="btn btn-ghost" href="#what-i-do">How I work</a>
+                    <a class="btn btn-ghost" href="#work-with-me">How coaching works</a>
                 </div>
             </div>
         </section>
@@ -200,26 +200,21 @@
             <div class="wrap split">
                 <div>
                     <p class="eyebrow">What I do</p>
-                    <h2>I believe a growth plan should start with the audience you want, and only then the channel.</h2>
+                    <h2>Most of my week is spent inside newsrooms, working on the numbers that keep them going.</h2>
                 </div>
-                <div class="prose">
+                <div>
                     <p class="lead" style="margin-top:0">Coaching with me is hands-on and specific to your
                         newsroom. We pick the growth problem that matters most right now, design a small
                         experiment around it, and look at what happened together. The work usually touches
                         some mix of these:</p>
-                    <ul class="jlist" style="margin-top:28px">
-                        <li>Market sizing and audience segmentation, so you know how much room you have to grow and
-                            who is in it.</li>
-                        <li>Paid acquisition strategy and channel selection, including the channels outside Meta
-                            that most newsrooms haven't tested yet.</li>
-                        <li>Organic social, including vertical video as a way for a small newsroom to get
-                            discovered.</li>
-                        <li>Partnerships with other publishers and creators, from newsletter swaps to joint
-                            projects.</li>
-                        <li>In-person events that bring new people onto your list.</li>
+                    <ul class="jlist" style="margin-top:32px">
+                        <li>Reaching the people in your community who don't know you exist yet, through paid
+                            campaigns, partnerships and search.</li>
+                        <li>Turning casual visitors into newsletter subscribers, and making sure the welcome
+                            series earns their attention.</li>
+                        <li>Asking for money well, whether that's membership, donations or a year-end campaign.</li>
+                        <li>Getting your analytics configured properly so you can tell which experiments actually worked.</li>
                     </ul>
-                    <p>Each of these gets run as a small, structured experiment with a number attached, because I'd
-                        much rather we learn something real in a few weeks than guess our way through a year.</p>
                 </div>
             </div>
         </section>
@@ -227,64 +222,91 @@
         <section class="alt" id="programs">
             <div class="wrap">
                 <p class="eyebrow">Programs</p>
-                <h2>You may already know me from a program your newsroom went through.</h2>
+                <h2>I also coach inside the programs that newsrooms already know and trust.</h2>
                 <div class="grid-rule">
                     <div>
                         <h3>American Journalism Project</h3>
-                        <p>Coach, Audience &amp; Sustainability program (2026). I also ran the AJP Audience Growth
-                            Lab in 2025.</p>
+                        <p>Coach, Audience &amp; Sustainability program (2026). Ran the AJP Audience Growth Lab (2025).</p>
                     </div>
                     <div>
                         <h3>Institute for Nonprofit News</h3>
-                        <p>Coach, INN Field Lab</p>
+                        <p>Coach, Field Lab</p>
                     </div>
                     <div>
                         <h3>The Lenfest Institute</h3>
-                        <p>Expert, Lenfest Expert Network</p>
+                        <p>Expert, Lenfest Expert Networks</p>
                     </div>
                     <div>
                         <h3>BlueLena</h3>
-                        <p>Audience growth advisor, BlueLena Advisory</p>
+                        <p>Principal Consultant, BlueLena Advisory</p>
                     </div>
                 </div>
-                <p class="footnote">Before that, from 2020 through 2025, I directed the Google News Initiative
-                    Pre-launch Lab for early-stage publishers, which graduated more than 100 news founders, and in
-                    2024 I designed and delivered the pilot of the GNI Journalistic Creators Lab for creator
-                    journalists working in video.</p>
+                <p class="footnote">Before this, I directed the Google News Initiative Pre-launch Lab from 2020 to
+                    2025, which graduated more than 100 news founders, and in 2024 I designed and delivered the
+                    pilot of the GNI Journalistic Creators Lab for news creators working in video.</p>
             </div>
         </section>
 
         <section class="brand" id="clients">
-            <div class="wrap split">
-                <div>
-                    <p class="eyebrow">Clients</p>
-                    <h2>Newsrooms I've supported</h2>
-                    <ul class="clients">
-                        <li>Anchorage Daily News</li>
-                        <li>Barn Raiser</li>
-                        <li>Block Club Chicago</li>
-                        <li>The Colorado Sun</li>
-                        <li>EdNC</li>
-                        <li>Grist</li>
-                        <li>The 19th</li>
-                        <li>YES! Magazine</li>
-                    </ul>
-                </div>
+            <div class="wrap">
+                <p class="eyebrow">Clients</p>
+                <h2>Newsrooms I've supported</h2>
+                <p class="clients-note">Through direct coaching, the American Journalism Project, INN Field Lab, Lenfest Expert Network and the GNI Journalistic Creators Lab.</p>
+                <ul class="clients">
+                    <li>Anchorage Daily News</li>
+                    <li>Barn Raiser</li>
+                    <li>BenitoLink</li>
+                    <li>Block Club Chicago</li>
+                    <li>Centro de Periodismo Investigativo</li>
+                    <li>City Bureau</li>
+                    <li>The Colorado Sun</li>
+                    <li>EdNC</li>
+                    <li>First Stop News</li>
+                    <li>Fort Worth Report</li>
+                    <li>Grist</li>
+                    <li>Honolulu Civil Beat</li>
+                    <li>ICT</li>
+                    <li>inewsource</li>
+                    <li>KAXE</li>
+                    <li>Mat-Su Sentinel</li>
+                    <li>Mission Local</li>
+                    <li>Mississippi Today</li>
+                    <li>Mountain State Spotlight</li>
+                    <li>Nashville Banner</li>
+                    <li>New York Focus</li>
+                    <li>The News &amp; Observer</li>
+                    <li>News Letter Journal</li>
+                    <li>The News Movement</li>
+                    <li>The 19th</li>
+                    <li>No Lab Coat Required</li>
+                    <li>Open Campus</li>
+                    <li>Oxford Free Press</li>
+                    <li>Scientific American</li>
+                    <li>Shasta Scout</li>
+                    <li>The Sick Times</li>
+                    <li>SooToday</li>
+                    <li>Spotlight Delaware</li>
+                    <li>TAPinto</li>
+                    <li>The Texas Tribune</li>
+                    <li>URL Media</li>
+                    <li>VTDigger</li>
+                    <li>Wisconsin Watch</li>
+                    <li>WyoFile</li>
+                    <li>YES! Magazine</li>
+                </ul>
                 <div class="figs">
                     <div>
                         <span class="n">500+</span>
                         <span class="l">hours of one-on-one coaching with news founders and senior newsroom
-                            leaders<span class="src">GNI Pre-launch Lab, 2020 to 2025</span></span>
+                            leaders</span>
                     </div>
                     <div>
                         <span class="n">100+</span>
-                        <span class="l">founders graduated from a program I directed<span class="src">GNI
-                                Pre-launch Lab, 2020 to 2025</span></span>
+                        <span class="l">founders graduated from a program I directed</span>
                     </div>
                     <div>
                         <span class="n">$4M+</span>
-                        <span class="l">in funding I've personally secured for clients<span class="src">Career
-                                total</span></span>
+                        <span class="l">in funding I've personally secured for clients</span>
                     </div>
                 </div>
             </div>
@@ -294,23 +316,19 @@
             <div class="wrap split">
                 <div class="prose">
                     <p class="eyebrow">Work with me</p>
-                    <h2>One newsroom at a time, and only a few at once.</h2>
-                    <p class="lead">You may be thinking that your newsroom has already done the cohort program, and
-                        that's fair. A lot of the publishers I talk to are tired of them. That's why my own coaching
-                        is one-to-one, with a small number of publishers at a time, on a rhythm that fits your team.
-                    </p>
-                    <p>We meet monthly or every other week with you and whoever owns audience on your team. Between
-                        sessions there's a short list of experiments to run, and a shared document that tracks what we
-                        tested and what it taught us. And if you've just wrapped up a lab or accelerator, I've found
-                        a retainer is a good way to keep the momentum going once the program ends.</p>
+                    <h2>A coaching retainer built around your newsroom's next growth problem.</h2>
+                    <p class="lead">We meet on a regular rhythm, monthly or every other week, with you and
+                        whoever owns audience and revenue on your team.</p>
+                    <p>If you've been through one of the programs above, a retainer is a good way to keep the
+                        momentum going once the program wraps up. And if I'm not the right person for your problem,
+                        I'll tell you, and I'll usually know who is.</p>
                 </div>
                 <div class="offer">
                     <div class="price">From $8,000</div>
                     <div class="per">Per year</div>
                     <ul>
-                        <li>Market sizing before we pick a single channel</li>
                         <li>Monthly or biweekly sessions with your team</li>
-                        <li>Structured experiments with a number attached</li>
+                        <li>Experiments designed around your goals and your data</li>
                         <li>A running record of what we tried and what it taught us</li>
                     </ul>
                     <div class="actions" style="margin-top:32px">
@@ -325,16 +343,13 @@
                 <img src="/static/phillip-smith.png" alt="Phillip Smith" width="400" height="400" loading="lazy">
                 <div class="prose">
                     <p class="eyebrow">About</p>
-                    <h2>I've spent more than two decades working inside and alongside newsrooms.</h2>
-                    <p class="lead">I'm Phillip Smith, founder of the Journalism Growth Lab. Before this I was the
-                        CTO of The Tyee, an award-winning independent newsroom in Vancouver, where I worked with the
-                        executive team on fundraising that raised more than $1M for its investigative reporting.
-                        After that I was Mozilla's Senior Fellow for Media &amp; Trust, and a John S. Knight
-                        Journalism Fellow at Stanford, where I piloted the entrepreneurship training that became the
-                        GNI Pre-launch Lab.</p>
-                    <p>From 2020 through 2025 I coached more than 100 journalism founders and newsroom leaders through
-                        early growth, strategic pivots and moments of real constraint. These days I live and work in
-                        Napa, California.</p>
+                    <h2>I've spent more than two decades on the business side of independent journalism.</h2>
+                    <p class="lead">I was the CTO of The Tyee, where I worked with the executive team on
+                        fundraising that raised more than $1M for its investigative reporting. I was later Mozilla's
+                        Senior Fellow for Media &amp; Trust, and a John S. Knight Journalism Fellow at Stanford,
+                        where I piloted the entrepreneurship training that became the GNI Pre-launch Lab.</p>
+                    <p>These days I spend most of my time coaching newsroom leaders, and I live and work in Napa,
+                        California.</p>
                 </div>
             </div>
         </section>
@@ -342,12 +357,11 @@
         <section class="contact dark" id="contact">
             <div class="wrap">
                 <p class="eyebrow">Contact</p>
-                <h2>Where will your next thousand readers come from?</h2>
-                <p class="lead">If you have a hunch, or no idea at all, I'd love to hear about it. Book a time on my
-                    calendar, or drop me a note in one of the usual places (<a
-                        href="https://www.linkedin.com/in/phillipadsmith/">LinkedIn</a> is the easiest).</p>
+                <h2>Let's talk through a challenge.</h2>
+                <p class="lead">Book a time on my calendar, or drop me a note on <a
+                        href="https://www.linkedin.com/in/phillipadsmith/">LinkedIn</a>.</p>
                 <div class="actions">
-                    <a class="btn btn-ondark" href="https://calendly.com/phillipadsmith/journalism-efforts-pro-bono">Book a call <span class="arr" aria-hidden="true">&rarr;</span></a>
+                    <a class="btn btn-ondark" href="https://calendly.com/phillipadsmith/30-minute-intro-for-journalism-orgs-upstarts-ws">Book a call <span class="arr" aria-hidden="true">&rarr;</span></a>
                     <a class="btn btn-ghost" href="https://www.linkedin.com/in/phillipadsmith/">Message on LinkedIn</a>
                 </div>
             </div>
