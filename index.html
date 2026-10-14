@@ -134,10 +134,9 @@
         .clients { list-style: none; margin: 32px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr)); column-gap: 32px; border-top: 1px solid rgba(255, 255, 255, .35) }
         .clients li { padding: 12px 0; border-bottom: 1px solid rgba(255, 255, 255, .35); font-size: 18px; font-weight: 600 }
         .figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); column-gap: 32px; margin-top: 56px }
-        .figs > div { display: grid; grid-template-columns: 1fr; gap: 10px; align-content: start; padding: 24px 0; border-top: 1px solid rgba(255, 255, 255, .35) }
-        .figs .n { font-family: var(--font-display); font-weight: 600; font-size: clamp(36px, 5vw, 52px); line-height: 1; letter-spacing: -0.02em }
-        .figs .l { font-size: 19px; line-height: 1.4 }
-        @media (max-width: 480px) { .figs > div { grid-template-columns: 1fr; gap: 8px } }
+        .figs > div { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; padding: 24px 0; border-top: 1px solid rgba(255, 255, 255, .35) }
+        .figs .n { display: block; font-family: var(--font-display); font-weight: 600; font-size: clamp(36px, 5vw, 52px); line-height: 1; letter-spacing: -0.02em }
+        .figs .l { display: block; font-size: 19px; line-height: 1.4 }
 
         /* Offer card */
         .offer { border: 1px solid var(--border-subtle); padding: clamp(28px, 4vw, 40px); background: var(--white) }
